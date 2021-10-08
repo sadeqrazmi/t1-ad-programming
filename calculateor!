@@ -1,0 +1,69 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+ 
+int main()
+{
+	cout<<"welcome to calculateor!"<<endl;
+	double a,b;
+	string s;
+	cout<<"please enter a: ";
+	cin>>a;
+	cout<<"enter operation: ";
+	cin>>s;
+	cout<<"please enter b: ";
+	cin>>b;
+	if(s=="+")
+	{
+		cout<<a+b;	
+	}
+
+	else if(s=="*")
+	{
+		cout<<a*b;
+	}
+	
+	else if(s=="/" && b!=0)
+	{
+		cout<<a/b;
+	}
+
+	else if(s=="cos")
+	{
+		a=a*3.14/180;
+		b=b*3.14/180;
+		cout<<"cos a is: "<<cos(a)<<endl<<"cos b is: "<<cos(b);
+	}
+	else if(s=="sin")
+	{
+		a=a*3.14/180;
+		b=b*3.14/180;
+		cout<<"sin a is: "<<sin(a)<<endl<<"sin b is: "<<sin(b);
+	}
+	cout<<endl;
+	int z;
+	cout<<"Hello, do you want to get a factorial number?(yes(1) or no(2))"<<endl;
+	cin>>z;
+	if(z==1)
+	{
+		int n;
+    long double factorial = 1.0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial of " << n << " = " << factorial;    
+    }
+	}
+	else
+	cout<<"ok good bye";
+
+
+}
